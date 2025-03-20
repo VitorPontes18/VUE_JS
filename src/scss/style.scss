@@ -1,0 +1,473 @@
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  * {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body{
+    background-color: rgb(252, 244, 232);
+  }
+  
+  
+  header {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fef4e8;
+  }
+  
+  .navbar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      &__logo{
+    font-size: 24px;
+    color: darkorange;
+  }
+  }
+  
+  #nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+  }
+  
+  #mobile_btn {
+    display: none;
+  }
+  
+  .mobile_menu {
+    display: none;
+  
+    .nav_item_mobile {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+  
+    &:hover{
+      color:#f1dd45;
+    }
+  }
+  
+  }
+  
+  
+  
+  .nav-item a{
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+    position: relative;
+    
+    &::before{
+      content: '';
+      width: 0;
+      height: 2px;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      transition: .5s ease-in-out;
+      background-color: #fac53e;
+    }
+  
+    &:hover{
+  
+    &::before{
+      width: 100%;
+  
+    }
+    }
+  }
+  
+  .nav-item.active a{
+      color: black;
+      border-bottom: 3px solid #f1f0e1;
+      
+  }
+  
+  .nav_item_mobile a{
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+  }
+  
+  
+  
+  .btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5c754;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+  }
+  
+  .btn-default:hover{
+    background-color: #f7ddad;
+  }
+
+  .hero{
+    display: flex;
+    padding: 85px 0;
+    min-height: 100vh;
+    
+
+    #cta{
+        width: 45% ;
+        padding-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    
+        
+  
+        .description {
+            font-size: 1.2rem;
+        }
+  
+        .title {
+            font-size: 4rem;
+            line-height: 3.7rem;
+            color: #1d1d1d;
+        
+            & span{
+            color:#e9a209;
+            }
+        }
+    }
+
+    .banner {
+      display:flex;
+      align-items: start;
+      justify-content: end;
+       width: 55%;
+       height: 100%;
+       position: relative;
+
+       img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            object-fit: contain;
+        
+        }
+    }      
+  }
+  
+  @media screen and (max-width: 1170px){
+      #nav_list,
+      .navbar .btn-default {
+        display:none;
+      }
+  
+      #mobile_btn{
+        display:block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+  
+      .mobile_menu.active {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .mobile_nav{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px; 
+        list-style: none;
+        text-align: center;
+      
+  
+      .nav_item_mobile {
+        list-style-type: none;
+        color: gray;
+      }
+      }
+     
+    }
+  
+ 
+  
+    #cta_buttons{
+      display: flex;
+      gap: 24px;
+  
+    }
+  
+    #cta_buttons a{
+      text-decoration: none;
+      color:#1d1d1d;
+  
+    }
+  
+    #phone_button {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background-color: #ebf0b0;
+      padding: 8px, 14px;
+      font-weight: 500;
+      box-shadow: 0px, 0px, 12px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+
+     & button{
+        box-shadow: none;
+
+      }
+    }
+  
+  .social-buttons {
+    display: flex;
+    gap: 18px;
+  
+  
+     a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 40px;
+      background-color: #ffe8af;
+      font-size: 1.25;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #000000;
+      box-shadow: 0px 0px 12px 4px rgba(83, 73, 73, 0.452);
+      transition: box-shadow .3s ease;
+    }
+
+  }
+
+  .shape {
+    background-color: #e9cd8d;
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    border-radius:  40% 30% 70% 20%;
+    top:70px;
+    right: 10%;
+  }
+  
+  .container {
+    display: flex;
+    padding: 0 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+
+
+}
+
+@media screen and (max-width: 950px) {
+    .hero,
+        .container {
+        min-height: 100%;
+        padding-top: 60px;
+        margin-left:27px ;
+        .shape{
+            display: none;
+        }
+
+    #cta{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 1.0rem;
+        display: flex;
+        
+        .title {
+            font-size: 3.5rem;
+            line-height: 4.7rem;
+        }
+        
+        .description {
+            font-size: 1.9rem;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color:rgb(82, 77, 77);
+        }
+        }
+    }
+    .banner img{
+        display: none;
+    }
+}
+
+#content, 
+#secs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .sesc-title {
+        color: #e9a209;
+        font-size: 1.563rem;
+    }
+
+    .Sesc-sub{
+        font-size: 2.1875rem;
+    }
+
+    .pratos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 32px;
+
+
+        .dish {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            gap: 18px;
+            width: 25%;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 12px 4px rgba(151, 133, 133, 0.432);
+            position: relative;
+
+            .dish_heart {
+                position: absolute;
+                background-color: #e9a209;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.563rem;
+                color: #fff9ea;
+                width: 70px;
+                height: 70px;
+                right: -10px;
+                top: -10px;
+
+            }
+        }
+    }
+
+}
