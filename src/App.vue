@@ -110,7 +110,7 @@
               <i class="fa-solid fa-heart"></i>
             </div>
 
-            <img src="/ramen.png" class="dish-heart" alt="">
+            <img src="img/ramen.png" class="dish-heart" alt="">
 
             <h3 class="dish-title">
               Ramen de misso/shoyu
@@ -234,7 +234,95 @@
         </div>
       </section>
 
+      <section id="testimoials">
+        <img src="/chef.png" class="test-chef">
+
+        <div id="test_cont">
+          <h3 class="secs_title">
+            Depoimentos
+          </h3>
+          <h2 class="secs_sebt">
+            O que os clientes falam sobre nós
+          </h2>
+
+          <div id="feedbacks">
+            <div class="feedbacks">
+              <img src="/avatar.png" class="feed-avatar" alt="">
+
+              <div class="feedback-cont">
+              <p> <strong>Luzinete</strong> 
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </p> 
+              <p>
+                  "Pratos Deliciosos e bem feitos, um otimo atendimento e entrega.
+              </p>
+
+              </div>
+            </div>
+          </div>
+        
+        
+          <div id="feedbacks">
+            <div class="feedbacks">
+              <img src="/avatar.png" class="feed-avatar" alt="">
+
+              <div class="feedback-cont">
+              <p> <strong>Maria</strong> 
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </p> 
+              <p>
+                  "Pratos Deliciosos e bem feitos, um otimo atendimento e entrega.
+              </p>
+
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn-default">
+            ver mais Avaliaçoes
+          </button>
+              
+        </div>
+      </section>
    </main>
+
+   <footer>
+    <img src="img/wave.svg" alt="">
+
+    <div id="footer_itens">
+      <span id="copyright">
+          2025 &copy; Vitor Daniel Pontes
+      </span>
+
+      <div class="social-buttons">
+            <a href="">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+
+
+    </div>
+   </footer>
 
 </template>
 
